@@ -1,0 +1,222 @@
+<html>
+<head>
+  <style>
+    /* Стили для супрематической композиции */
+    .suprematism {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .suprematism div {
+      position: absolute;
+      transform-origin: center;
+    }
+
+    .square {
+      width: 200px;
+      height: 200px;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 200px solid white;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .white {
+      background-color: white;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    /* Анимация для супрематической композиции */
+    @keyframes rotate {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+
+    @keyframes move {
+      from {left: 0;}
+      to {left: 100%;}
+    }
+
+    @keyframes scale {
+      from {transform: scale(1);}
+      to {transform: scale(2);}
+    }
+
+    /* Стили для основного контента */
+    .content {
+      position: relative;
+      width: 100%;
+      height: auto;
+      background-color: white;
+      font-family: Arial, sans-serif;
+      color: black;
+    }
+
+    .content h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-top: 50px;
+    }
+
+    .content p {
+      text-align: justify;
+      font-size: 18px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .content img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+    }
+
+    /* Стили для навигации */
+    .navigation {
+      position: relative;
+      width: 100%;
+      height: auto;
+      background-color: black;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .navigation ul {
+      list-style-type: none;
+      margin-left: auto;
+      margin-right:auto;  
+     margin-bottom:auto; 
+     display:flex; 
+     justify-content:center; 
+     align-items:center; 
+     flex-wrap:no-wrap; 
+     padding-top:auto; 
+     padding-bottom:auto; 
+     padding-left:auto; 
+     padding-right:auto; 
+     width:auto; 
+     height:auto; 
+   }
+   
+   .navigation li {
+     display:inline-block; 
+     margin-left:auto; 
+     margin-right:auto; 
+     margin-top:auto; 
+     margin-bottom:auto; 
+   }
+   
+   .navigation a {
+     display:block; 
+     text-decoration:none; 
+     color:white; 
+     font-size:auto; 
+     padding-top:auto; 
+     padding-bottom:auto; 
+     padding-left:auto; 
+     padding-right:auto; 
+   }
+   
+   /* Эффект параллакса */
+   .parallax {
+     perspective-origin:center center; 
+   }
+   
+   .parallax div {
+     transform-style:preserve-3d; 
+   }
+   
+   /* Скорость параллакса */
+   .slow {
+     transform-origin:center center -500px; 
+   }
+   
+   .medium {
+     transform-origin:center center -300px; 
+   }
+   
+   .fast {
+     transform-origin:center center -100px; 
+   }
+ </style>
+</head>
+<body>
+ <div class="parallax">
+   <!-- Супрематическая композиция -->
+   <div class="suprematism">
+<div class="square red fast" style="top: 10%; left: 20%; animation-name:
+       rotate, move; animation-duration:
+       10s, 20s; animation-iteration-count:
+       infinite, infinite;"></div>
+       <div class="circle white medium" style="top:
+         30%; left:
+         40%; animation-name:
+         rotate; animation-duration:
+         15s; animation-iteration-count:
+         infinite;"></div>
+         <div class="triangle blue slow" style="top:
+           50%; left:
+           60%; animation-name:
+           scale; animation-duration:
+           20s; animation-iteration-count:
+           infinite;"></div>
+           <div class="square yellow fast" style="top:
+             70%; left:
+             80%; animation-name:
+             rotate, move; animation-duration:
+             10s, 20s; animation-direction:
+             reverse, reverse; animation-iteration-count:
+             infinite, infinite;"></div>
+             <h1 style="color: white; font-family: Arial, sans-serif; font-size: 72px; text-align: center;">Супрематизм</h1>
+           </div>
+           
+           <!-- Основной контент -->
+           <div class="content">
+             <h1>Что такое супрематизм?</h1>
+             <p>Супрематизм — художественное направление в русском и советском искусстве XX века, основанное Казимиром Малевичем. Супрематизм представляет собой абстрактное искусство, основанное на использовании геометрических фигур, таких как квадрат, круг и треугольник, и цветовых пятен на белом фоне. Супрематизм стремится к выражению чистого художественного чувства, не связанного с изображением реальных объектов или сюжетов. Супрематизм считается одним из первых и самых радикальных проявлений абстрактного искусства в мировой истории.</p>
+             <img src="^4^" alt="Черный квадрат">
+             <p>Самым известным произведением супрематизма является «Черный квадрат» Казимира Малевича, созданный в 1915 году. Эта работа представляет собой черный квадрат на белом фоне, который символизирует «ноль формы», «конец старого искусства» и «начало нового художественного мира». Малевич считал, что черный квадрат является «первым шагом к чистому творчеству в живописи».</p>
+             <img src="^5^" alt="Белый на белом">
+             <p>Другим знаменитым произведением супрематизма является «Белый на белом» Казимира Малевича, созданный в 1918 году. Эта работа представляет собой<!-- Продолжение основного контента -->
+<p>белый квадрат, наклоненный под углом к белому фону, который символизирует «бесконечность пространства», «абсолютное ничто» и «высшее состояние чистоты и совершенства». Малевич считал, что белый квадрат является «последним шагом к чистому творчеству в живописи».</p>
+<img src="^6^" alt="Красный квадрат">
+<p>Еще одним известным произведением супрематизма является «Красный квадрат» Казимира Малевича, созданный в 1915 году. Эта работа представляет собой красный квадрат на белом фоне, который символизирует «живое, ощущаемое бытие», «энергию и страсть» и «революционный дух». Малевич считал, что красный квадрат является «первым шагом к чистому творчеству в живописи».</p>
+<h1>Кто такой Казимир Малевич?</h1>
+<p>Казимир Северинович Малевич (1879-1935) — русский и советский художник, теоретик искусства, один из основоположников абстрактного искусства и создатель супрематизма. Малевич родился в семье поляков в Киевской губернии. С детства он проявлял интерес к рисованию и живописи. В 1895 году он поступил в Киевскую художественную школу, где изучал импрессионизм, постимпрессионизм и символизм. В 1904 году он переехал в Москву, где продолжил свое образование в различных художественных студиях и школах. В 1910-1914 годах он участвовал в выставках «Бубновый валет», «Союз молодежи» и «Цветокор», где знакомился с новыми течениями в европейском искусстве, такими как кубизм, футуризм и неопримитивизм. В 1915 году он представил свою первую супрематическую выставку «0.10», на которой показал свои знаменитые работы «Черный квадрат», «Черный круг» и «Черный крест».В 1918-1922 годах он работал преподавателем в различных художественных институтах и академиях, где разрабатывал свою теорию супрематизма и воспитывал своих учеников, таких как Любовь Попова, Александр Родченко, Илья Чашник и другие. В 1927 году он поехал в Германию, где участвовал в выставке «Grosse Berliner Kunstausstellung» и издал свою книгу «Мир как беспредметность». В 1930-1932 годах он был арестован и репрессирован советскими властями за свои «формалистические» и «буржуазные» взгляды на искусство. В 1935 году он умер от рака в Ленинграде. Его работы были запрещены и уничтожены в СССР до 1960-х годов, когда они были открыты для широкой публики и признаны как великие достижения мирового искусства.</p>
+</div>
+<!-- Навигация -->
+<div class="navigation">
+  <ul>
+    <li><a href="#suprematism">Супрематизм</a></li>
+    <li><a href="#content">Контент</a></li>
+    <li><a href="#navigation">Навигация</a></li>
+  </ul>
+</div>
+</div>
+</body>
+</html>
